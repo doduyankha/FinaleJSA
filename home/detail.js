@@ -55,5 +55,5 @@ let displayFood2 = [
      </div>
      `;
   }
-  mainProduct(displayFood2);
+  mainProduct();
 

@@ -1,0 +1,134 @@
+
+.cart_button {
+    width: 110px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #111928;
+    background-color: #111928;
+    position: absolute;
+}
+.cart_button h3 {
+    color: #FFFFFF;
+    font-weight: 600;
+    size: 5px;
+    height: -10px;
+    text-align: center;
+    line-height: 16.94px;
+ }
+ .one {
+    margin-left: 2cm ;
+    width: 350px; height: 300px;
+     border: 0 rgba(255, 255, 255, 0) solid;
+     border-radius: 10px;
+     margin-top: 1cm;
+     margin-left: 2.4cm ;
+     background-color: rgba(235, 85, 85, 0.922);
+}
+
+.banner-pic img {
+margin-top: 48px;
+text-align: center;
+}
+.icon_header button{
+width: 84px;
+height: 42px;
+border-radius: 5px;
+border: 1px solid #F54748;
+} 
+.sign_in{
+background-color: white;
+margin-left: 20px;
+color:#F54748 ;
+}
+.one img {
+    margin-left: 57px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 4px solid;
+    width: 230px;
+    height: 230px;
+}
+.one_text button{
+    width :300px ;
+    height: 50px;
+    border: 4px gold solid;
+     border-radius: 25px;
+     background-color: white;
+     transition: 0.3s;
+     font-size: large;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: absolute;
+     margin-top: 0cm;
+     margin-left: -3.9cm;
+     
+}
+.one_text button:hover{
+    transform: scale(1.1)
+}
+.one_text{
+    text-align: center;
+    margin-top: 0cm;
+}
+.one h4 {
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 0px;
+    text-align: center;
+}
+.one p {
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: -0.5cm;
+    text-align: center;
+}
+.sign_out{
+background-color: #F54748;
+margin-left: 20px;
+color: white;
+}
+.icon_header{
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 5cm;
+align-items: center;
+text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.food_row2 {
+    display: flex;
+    margin-right: 90px;
+    margin-top: 1cm ;
+   }
+
+.food_row {
+    display: flex;
+    margin-top: 2cm;
+}
+.food_row img {
+    width: 40%;
+    margin-left: 7cm;
+}
+.quantity {
+    display: block;
+}
+
+.related-text {
+    width: max-content;
+}
+h3 {
+    color: #F54748;
+}
+span {
+    width: 98px;
+    height: 22px;
+}
+.related-text p {
+    font-weight: 700;
+    font-size: 24px;
+}

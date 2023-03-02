@@ -1,0 +1,101 @@
+.signboard { 
+    display: grid;
+    margin-left:  14.23cm;
+    margin-top: 3cm ;
+    background: rgba(245, 146, 146, 0.818);
+    backdrop-filter: blur(1px);
+     width: 370px; height: 414px;
+     border-radius : 5px;
+     border: 2px #F54748 solid;
+
+     
+}
+.name {
+    border: 2px rgb(245, 71, 72) solid;
+    border-radius : 4px; width: 320px; height: 40px;
+    margin-bottom: 0cm;;
+    margin-left: 0.5cm;
+}
+.SU {
+    border: 2px rgb(245, 71, 72) solid;
+    border-radius : 4px; width: 320px; height: 40px;
+    margin-bottom: 0cm;;
+    margin-left: 0.5cm;
+}
+button {
+    border: 2px #ba1212 solid;
+    border-radius : 5px; 
+    width: 327px;
+     height: 45px;
+    background-color: rgb(245, 64, 64);
+    margin-left: 0.5cm;
+    color: white;
+    font-size: large;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+ button:hover {
+    background-color:rgb(243, 91, 91) ;
+    text-decoration: underline;
+}
+.slogan { 
+    font-size: larger;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 6cm;
+    height:4cm ;
+    margin-top: 2.7cm;
+}
+.sub-banner {
+    width: 1380px ;
+    height: 600px;
+}
+.signboard h2 {
+    text-align: center;
+    margin-top: 0.5cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.Hello {
+    background-color: rgba(245, 146, 146, 0.904);
+    border: 2px #F54748 ;
+    border-radius: 5px 5px 0px 0px;
+    margin-top : 0px ;
+    margin-bottom: 10px;
+    height: 1.9cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+.signboard p {
+    margin-left: 0.5cm;
+    font-size: 22px;
+    margin-bottom: 0.1cm;
+    font-family: HCo Gotham SSm,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.pass {
+    border: 2px rgb(245, 71, 72) solid;
+    border-radius : 4px; width: 320px; height: 40px;
+    margin-left: 0.5cm;
+   ;
+}
+.SU2 {
+    border: 2px rgb(245, 71, 72) solid;
+    border-radius : 4px; width: 320px; height: 40px;
+    margin-left: 0.5cm;
+   ;
+}
+.insert {
+    margin-top: -0.8cm;
+    margin-bottom: 1cm;
+}
+.logo {
+    width: 3.5cm;
+    height: 3.5cm;
+    margin-top: 0.5cm;
+}

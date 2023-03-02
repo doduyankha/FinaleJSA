@@ -1,0 +1,37 @@
+.container {
+    background-color: white;
+    height: auto;
+    width: 1380px;
+    margin: 0 auto;
+    font-family: arial,sans-serif;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 48.5px;
+font-weight: bolder;
+background-image: ("mischellainious/img/z4114737727752_11d5bd87e43f4313bbfb181eb27c2ba0.jpg");
+background-color: #cccccc;
+}
+.menu ul li {
+list-style: none;
+margin: 0px 13px;
+}
+a {
+font-weight: bold;
+text-decoration: none;
+color :#111928;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+font-size: medium;
+}
+.menu ul {
+text-align: center;
+display: flex;
+list-style: none;
+}
+.slogan {
+margin-left: 7cm;
+}
+
+
