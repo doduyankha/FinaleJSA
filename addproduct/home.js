@@ -31,7 +31,7 @@ const arrListProduct = [
         button : "https://logos-download.com/wp-content/uploads/2016/06/Ferrero_Rocher_logo_logotype-700x457.png",
         description : "A unique taste experience of contrasting layers: a whole crunchy hazelnut in the heart, a delicious creamy hazelnut filling, a crisp wafer shell covered with chocolate and gently roasted pieces. And thanks to its inimitable golden wrapper Ferrero Rocher is even more unique and special.",
         price : "$17.99",
-        id :1
+        id :21
     },
     {
         img: "https://th.bing.com/th/id/OIP.q4tNNpNcGe-CTvbG0C99BwHaE8?w=272&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7",
@@ -39,14 +39,14 @@ const arrListProduct = [
         button : "https://1000logos.net/wp-content/uploads/2020/09/Cadbury-Logo.png",
         description : "Cadbury Dairy Milk's classic milk chocolate combines the finest ingredients and flavours that bring the delicious taste of generosity to every slab. Chocolate slab has a smooth and creamy deliciousness moulded into a unique chocolate taste – a national favourite.",
         price : "$48.50",
-        id :2
+        id :23
     }, {
         img: "https://th.bing.com/th/id/OIP._faZzF6qO4SYKHsuUqghCwHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
         name: "Hershey's",
         button : "https://cdn.freebiesupply.com/logos/large/2x/hersheys-logo-png-transparent.png",
         description : "Hershey's has a delicious, unique taste because of the farm fresh milk that is used! HERSHEY'S Milk Chocolate is one of the only milk chocolate brands in the world that still uses fresh milk in its production, giving it a distinctive taste.",
         price : "$22.50",
-        id :3
+        id :41
     },
     {
         img: "https://th.bing.com/th/id/OIP.9FFm9U4SyVb9kY-m6tuarwHaF2?pid=ImgDet&rs=1",
@@ -54,32 +54,35 @@ const arrListProduct = [
         button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
         description : "Dark and aromatic, each Excellence bar is created from the finest cocoa and the highest quality ingredients. With rich flavour profiles, a smooth, even texture and silky sheen, these delicately thin bars excite and entice the senses.",
         price : "$48.00",
-        id :4
+        id :73
     },
 ];
 
-function showProduct(data) {
+let showProduct= (data) =>  {
     let Product_item = document.querySelector(".showcase");
     Product_item.innerHTML = "";
     if (Product_item) {
         for (let item of data) {
             Product_item.innerHTML += `
         <div class="one">
-                <img src="${item.img}" alt="" class="dishes_img">
-                <h4> ${item.price} </h4>
-                <div class="description">
-                <p>${item.description}</p>
-                </div>
-                <h4> ${item.name} </h4>
-            <div class="one_text">
-            <button onclick="mainProduct(displayFood2)">𝓐𝓭𝓭 𝓣𝓸 𝓒𝓪𝓻𝓽</button>
-            </div>
+        <a href="detail.html?url=${item.id}">
+        <img src="${item.img}" alt="" class="dishes_img">
+          <h4> ${item.price} </h4>
+          <div class="description">
+          <p>${item.description}</p>
+          </div>
+          <h4> ${item.name} </h4>
+      <div class="one_text">
+      <button onclick="mainProduct2(arrListProduct)">𝓐𝓭𝓭 𝓣𝓸 𝓒𝓪𝓻𝓽</button>
+      </div></a>
         </div>
             `;
         }
     }
 }
 showProduct(arrListProduct);
+
+
 
 let displayFood2 = [
     {
@@ -106,69 +109,13 @@ let displayFood2 = [
     },
    ]
    
-   function showSub(info) {
+   let showSub= (info)  =>   {
       var _food_row2 = document.querySelector(".showcase");
       _food_row2.innerHTML = "";
       if(_food_row2) {
           for(var item of info) {
               _food_row2.innerHTML += `
               <div class="two">
-              <img src="${item.img}" alt="" class="dishes_img">
-                <h4> ${item.price} </h4>
-                <div class="description">
-                <p>${item.description}</p>
-                </div>
-                <h4> ${item.name} </h4>
-            <div class="one_text">
-            <button onclick="mainProduct(displayFood2)">𝓐𝓭𝓭 𝓣𝓸 𝓒𝓪𝓻𝓽</button>
-            </div>
-              </div>
-              `;
-          }
-      }
-   }
-   showSub(displayFood2);
-
-   let displayClothes= [
-    {
-        img: "https://i.etsystatic.com/31411722/r/il/d159bb/3611834056/il_fullxfull.3611834056_mb32.jpg",
-        name: " DxP Couple Shirts",
-        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
-        description : "",
-        price : "$18.50",
-        cate : 2
-    },{
-        img: "https://i5.walmartimages.com/asr/f26d1722-a0ed-41d4-bd97-b7013b1ccc13_1.1e23b4eba4fa66668e7fa32ffe5087df.jpeg",
-        name: "My Valentine Couple Shirts",
-        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
-        description : "",
-        price : "$18.50",
-        cate : 2
-    },{
-        img: "https://lzd-img-global.slatic.net/g/p/da9457563db2e4d8d09f0e41fc57d195.jpg_720x720q80.jpg_.webp",
-        name: "Heartbeat Couple Shirts",
-        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
-        description : "",
-        price : "$18.50",
-        cate : 2
-    },{
-        img: "https://ae01.alicdn.com/kf/H2ff5f115b3a4476dbc5a519323f72b73c/Couple-T-Shirts-for-Boyfriend-and-Girlfriend-Love-Short-Sleeve-Sweet-Tee-Shirt-Femme-2021-Valentine.jpg_Q90.jpg_.webp",
-        name: "Puzzle Piece Couple Shirt",
-        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
-        description : "",
-        price : "$18.50",
-        cate : 2
-    },
-   ]
-   
-   function showClothes(insert) {
-      var _food_row = document.querySelector(".showcase");
-      _food_row.innerHTML = "";
-      if(_food_row) {
-          for(var item of insert) {
-              _food_row.innerHTML += `
-            
-              <div class="one">
               <a href="detail.html?url=${item.id}">
               <img src="${item.img}" alt="" class="dishes_img">
                 <h4> ${item.price} </h4>
@@ -186,29 +133,62 @@ let displayFood2 = [
       }
    }
    showSub(displayFood2);
-   let mainProduct=()=>
-   {let url = new URLSearchParams(window.location.search).get("url")
-   let newArrayProduct = displayFood2.find(function(item){
-     return item.id = url
-   });
-  let giotthieu = document.querySelector(".food_row");
-  giotthieu.innerHTML= `
-  <div class="one">
-  <h1>${newArrayProduct.Description}</h1>
-  <h3> 30$ </h3>
-  <p>${newArrayProduct.Words}</p>
-  <div class="quantity">
-          <form action="_self">
-          <div id="input-text"><input style="border: 2px #F54748 solid;
-          border-radius : 5px; width: 180px; height: 42px;" type="text" name="Hello" id="">
-          </div>
-          <div class="cart_button">
-          <h3> Add To Cart </h3>
-          </div>
-       </div>
-  </div>           
-  <img src="${newArrayProduct.img}" alt="">
-  </div>`
-  
-  }
-  mainProduct(displayFood2)
+
+   let displayClothes= [
+    {
+        img: "https://i.etsystatic.com/31411722/r/il/d159bb/3611834056/il_fullxfull.3611834056_mb32.jpg",
+        name: " DxP Couple Shirts",
+        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
+        description : "",
+        price : "$18.50",
+        id :8
+    },{
+        img: "https://i5.walmartimages.com/asr/f26d1722-a0ed-41d4-bd97-b7013b1ccc13_1.1e23b4eba4fa66668e7fa32ffe5087df.jpeg",
+        name: "My Valentine Couple Shirts",
+        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
+        description : "",
+        price : "$18.50",
+        id :9
+    },{
+        img: "https://lzd-img-global.slatic.net/g/p/da9457563db2e4d8d09f0e41fc57d195.jpg_720x720q80.jpg_.webp",
+        name: "Heartbeat Couple Shirts",
+        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
+        description : "",
+        price : "$18.50",
+        id : 10
+    },{
+        img: "https://ae01.alicdn.com/kf/H2ff5f115b3a4476dbc5a519323f72b73c/Couple-T-Shirts-for-Boyfriend-and-Girlfriend-Love-Short-Sleeve-Sweet-Tee-Shirt-Femme-2021-Valentine.jpg_Q90.jpg_.webp",
+        name: "Puzzle Piece Couple Shirt",
+        button : "https://companieslogo.com/img/orig/LISP.SW_BIG-793cdab5.png?t=1597871861",
+        description : "",
+        price : "$18.50",
+        id : 11
+    },
+   ]
+   
+   let showClothes=(insert)=> {
+      var _food_row = document.querySelector(".showcase");
+      _food_row.innerHTML = "";
+      if(_food_row) {
+          for(var item of insert) {
+              _food_row.innerHTML += `
+            
+              <div class="one">
+              <a href="detail.html?url=${item.id}">
+              <img src="${item.img}" alt="" class="dishes_img">
+                <h4> ${item.price} </h4>
+                <div class="description">
+                <p>${item.description}</p>
+                </div>
+                <h4> ${item.name} </h4>
+            <div class="one_text">
+            <button onclick="mainProduct2(displayClothes)">𝓐𝓭𝓭 𝓣𝓸 𝓒𝓪𝓻𝓽</button>
+            </div></a>
+              
+              </div>
+              `;
+          }
+      }
+   }
+   showSub(displayFood2);
+   

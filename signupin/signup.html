@@ -26,22 +26,31 @@
             </div>
 
         </div>
-        <div class="signboard">
+        <div class="signboard2">
             <div class="Hello">
                 <h2 >Yours Truly welcomes</h2>
             </div>
             <div class="insert">
-                <p>Username</p>
-                <input type="text" name="Username" class="SU" >
-              
-                  <p>Password</p>
-                <input type="password" name="Password" class="SU2">
+                <form action="#" onsubmit="return valide()">
+                    <p>Username</p>
+        <input type="text" name="Username" class="name"  >
+        <p id="loiName" style="display: none;">chưa nhập tên hoặc sai cú pháp</p>
+
+        <p>Password</p>
+        <input type="password" name="Password" class="pass">
+        <p id="loiSdt" style="display: none;">chưa nhập Password hoặc sai cú pháp</p>
+        
+        <p>Reinsert Password</p>
+        <input type="password" name="RePassword" class="repass" >
+        <p id="loiGmail" style="display: none;">Sai mật khẩu nhập lại</p>
+                
+               </form>
             </div>
-            <button onclick="dangki()">SIGN UP</button>
+         <button type="submit" onclick="signin()"  id="#signin1">SIGN UP</button>    
         </div>
         
         
     </div>
 </body>
-
+<script src="valide.js"></script>
 </html>

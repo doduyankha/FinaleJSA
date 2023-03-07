@@ -82,16 +82,17 @@
 .quantity {
     display: flex ;
     width: 400px;
-    border-radius: 4px;margin-bottom: 0px;
+    margin-top: .3cm;border-radius: 4px;
 }
 .cart_button {
-    margin-left: 6cm;
+    margin-left: 3cm;
+    margin-top: 2cm;
     
 }
 .cart_button button {
     margin-left: 1cm;
     height:47px ;
-    width: 130px;
+    width: 250px;
     border: 2px red solid;
     font-size: 16px;
     background-color: white;
@@ -108,8 +109,8 @@
     height: 1000px;
 }
 .food_row img {
-    width: 50.5%;
-    height: 717px;
+    width: 740px;
+    height: 160px;
     position: absolute;
     margin-top: -7.25cm;
     margin-left: -20.83cm;
@@ -122,6 +123,7 @@
     height: 734.5px;
     width: 1430px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
 }
 .scrollbox {
     overflow: scroll;
@@ -137,7 +139,7 @@
     border-radius: 0px;
     background-color: rgb(255, 249, 249);border-radius: 10px;
 }
-.one h1 {
+.product-name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     margin-top: 0.1cm;
@@ -145,14 +147,16 @@
 .sub-one {
  padding-top: 0.2cm;
  width: 576px;
- height: 300px;
- margin-left: 0.1cm;
+ margin-left: 0.3cm;
 }
-.sub-one p {
+.sub-one input {
+margin-left: 0.5cm;
+margin-top: 0.5cm;
+}
+.product-desc {
     margin-left: 0.1cm;
     font-size: 20px;
     width: 565px;
-    max-height:10cm ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .cart_button img {
@@ -160,8 +164,12 @@
     height: 44px;
     border :0;
     position: absolute;
-    margin-left: 0.5cm;
+    margin-left: 0.3cm;
     margin-top: 0cm;
     border-radius: 4px;
     border: 2px red solid;
+}
+input {
+    margin-top: 10px;
+    border-radius : 5px;
 }

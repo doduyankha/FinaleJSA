@@ -82,10 +82,11 @@
 .quantity {
     display: flex ;
     width: 400px;
-    border-radius: 4px;margin-bottom: 0px;
+    margin-top: 1cm;border-radius: 4px;
 }
 .cart_button {
     margin-left: 6cm;
+    margin-top: -1.24cm;
     
 }
 .cart_button button {
@@ -145,14 +146,12 @@
 .sub-one {
  padding-top: 0.2cm;
  width: 576px;
- height: 300px;
  margin-left: 0.1cm;
 }
 .sub-one p {
     margin-left: 0.1cm;
     font-size: 20px;
     width: 565px;
-    max-height:10cm ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .cart_button img {

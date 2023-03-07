@@ -10,13 +10,25 @@
 
      
 }
+.signboard2 { 
+    display: grid;
+    margin-left:  14.23cm;
+    margin-top: 3cm ;
+    background: rgba(245, 146, 146, 0.818);
+    backdrop-filter: blur(1px);
+     width: 370px; height: 500px;
+     border-radius : 5px;
+     border: 2px #F54748 solid;
+
+     
+}
 .name {
     border: 2px rgb(245, 71, 72) solid;
     border-radius : 4px; width: 320px; height: 40px;
     margin-bottom: 0cm;;
     margin-left: 0.5cm;
 }
-.SU {
+.repass {
     border: 2px rgb(245, 71, 72) solid;
     border-radius : 4px; width: 320px; height: 40px;
     margin-bottom: 0cm;;
@@ -33,7 +45,7 @@ button {
     font-size: large;
     margin-bottom: 20px;
     font-weight: 700;
-    
+    margin-top: 1.6cm;
 }
  button:hover {
     background-color:rgb(243, 91, 91) ;
@@ -58,6 +70,13 @@ button {
     color: rgb(0, 0, 0);
     font-size: 30px;
 }
+.signboard2 h2 {
+    text-align: center;
+    margin-top: 0.5cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
 .Hello {
     background-color: rgba(245, 146, 146, 0.904);
     border: 2px #F54748 ;
@@ -71,6 +90,14 @@ button {
     
 }
 .signboard p {
+    margin-left: 0.5cm;
+    font-size: 22px;
+    margin-bottom: 0.1cm;
+    font-family: HCo Gotham SSm,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.signboard2 p {
     margin-left: 0.5cm;
     font-size: 22px;
     margin-bottom: 0.1cm;

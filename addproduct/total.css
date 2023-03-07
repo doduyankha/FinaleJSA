@@ -1,12 +1,14 @@
 .container {
     
     height: auto;
-    margin-top: -1500px;
+    
+    margin: 0 auto;
     font-family: arial,sans-serif;
     ;
 }
 body {
-    /* background-image:  url("https://img.lovepik.com/background/20211021/large/lovepik-romantic-love-candles-for-valentines-day-background-image_500255234.jpg") ;; */
+    
+    /* background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-romantic-love-candles-for-valentines-day-background-image_500255234.jpg"); */
     height: auto;
     width: 1380px;
     margin: 0 auto;
@@ -58,6 +60,9 @@ display: flex;
 list-style: none;
 margin-left: -0.4cm;
 }
+.menu {
+    float: left;
+}
 
 .footer {
     display: flex;
@@ -65,7 +70,7 @@ margin-left: -0.4cm;
     
     font-weight: bold;
     margin-bottom: 0px;
-    margin-top: -2cm;
+    margin-top: 0cm;
     }
 
     .logo {
