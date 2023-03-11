@@ -2,7 +2,7 @@
     
     height: auto;
     
-    margin: 0 auto;
+    margin-top: -1500px;
     font-family: arial,sans-serif;
     ;
 }
@@ -36,8 +36,8 @@ background: rgb(0, 0, 0);
 .menu ul li {
 list-style: none;
 margin: 0px 40px;
-color: rgb(255, 255, 255);
-
+color: white;
+font-size: large ;
 font-size: larger;
 }
 .header a {
@@ -58,7 +58,7 @@ a {
 text-align: center;
 display: flex;
 list-style: none;
-margin-left: -1.7cm;
+margin-left: -0.4cm;
 }
 .menu {
     margin-left: 0px;

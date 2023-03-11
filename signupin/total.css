@@ -43,7 +43,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 }
 .menu ul {
-text-align: center;
+margin-left: -1.7cm;
 display: flex;
 list-style: none;
 }
